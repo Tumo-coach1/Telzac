@@ -1,100 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head><meta charset="utf-8"><script src="Menu.js" defer></script>
-          <link rel="stylesheet" href="acceuil.css">
-        <title>Telzac</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <script src="Menu.js" defer></script>
+    <link rel="stylesheet" href="acceuil.css">
+    <title>Telzac</title>
+    <script>
+        function openTab(tabName) {
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (var i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+
+    </script>
+</head>
 <body>
     <!--Testjs-->
 
     <!--Top menu-->
-        <!--if Side_bar = "A propos"-->
-            <!-- Acceuil -->
-            <div id="top_menu">
-                <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
-                           <label for="collapsible" class="lbl-toggle">Acceuil</label>
-                            <div class="collapsible-content">
-                                <div class="content-inner">
-                                    <p>QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
-                                    its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
-                                    plug-ins. Test-Driven Development.
-                                    </p>
-                                </div>
-                            </div>
-                    </div>
-            <!--Histoire projet-->
-                <div class="wrap-collabsible_2">
-                    <input id="collapsible_2" class="toggle" type="checkbox">
-                           <label for="collapsible" class="lbl-toggle_2">Histoire projet--</label>
-                            <div class="collapsible-content_2">
-                                <div class="content-inner_2">
-                                    <p>QUnit is by calling one of the object that are embedded in JavaScript, and faster JavaScript program could also used with
-                                    its elegant, well documented, and functional programming using JS, HTML pages Modernizr is a popular browsers without
-                                    plug-ins. Test-Driven Development.
-                                    </p>
-                                </div><!--close content-inner_2-->
-                            </div><!--close collapsible-content_2-->
-                    </div>
-            <!--Projet dérivé-->
-        <!--if Side_bar = "Ère du monde"-->
-            <!--Genèse-->
-            <!--Ère 1-->
-            <!--Ère 2-->
-            <!--Ère 3-->
-            <!--Ère 4-->
-            <!--Ère 5-->
-            <!--Ère 6-->
-            <!--Ère 7-->
-            <!--Ère 8-->
-            <!--Ère 9-->
-        <!--if Side_bar = "Peuples du monde"-->
-            <!--Humains-->
-            <!--Elfes
-            --><!--Sylvains
-            --><!--Hauts Elfes
-            --><!--Isgürn-->
-            <!--Nains
-            --><!--Nains des tréfonds
-            --><!--Nains des crevasses-->
-            <!--Hobbit-->
-            <!--Argonien-->
-            <!--Gnome-->
-            <!--Peuple maudit
-            --><!--Vampires
-            --><!--Sirènes
-            --><!--Lycans-->
-        <!--if Side_bar = "Géographie"-->
-            <!--Continent-->
-            <!--Mers & Océans-->
-            <!--Chaînes montagneuses-->
-        <!--if Side_bar = "Faune"-->
-            <!--Domestique-->
-            <!--Sauvage-->
-                <!--Insecte-->
-                <!--Mammifère-->
-                <!--Reptile-->
-        <!--if Side_Bar = "Flore"-->
-            <!--Fleurs & Herbacées-->
-            <!--Plantes-->
-            <!--Arbres-->       
-    
-    </div><!--Clôture top_menu-->  <!--Side_bar-->
-   
-        <!--A propos-->
-        <!--Ère du monde-->
-        <!--Peuples du monde-->
-        <!--Géographie-->
-        <!--Faune-->
-        <!--Flore-->
-    
-    <!--
-            Chronology sidebar
-            Complément info géo
-            Contenu
-    -->
+    <div id="top_menu">
+        <!--Á propos-->
+        <button class="welcome_button"><a href="#a_propos">Á propos</a></button>
+        <!--Présentation-->
+        <button class="welcome_button"><a href="#presentation">Présentation</a></button>
+        <!--Projets-->
+        <button class="welcome_button"><a href="#projet">Projets</a></button>
+    </div><!--Clôture top_menu-->
+
+    <!--Side_bar-->
+    <div class="tab" onmouseover="openTab('tab1')">Onglet 1</div>
+    <div id="tab1" class="tabcontent">
+        <!--Onglets de l'onglet 1-->
+             <!--Acceuil-->
+            <button>Acceuil</button>    
+            <!--Ère du monde-->
+            <button>Ère du monde</button>
+            <!--Peuples du monde-->
+            <button>Peuple du monde</button>
+            <!--Géographie-->
+            <!--Faune-->
+            <!--Flore-->
+    </div>
+
+    <!-- Chronology sidebar, Complément info géo, Contenu -->
+
+    <!--Contenu page-->
+    <div id="a_propos">
+        <h1>À propos</h1>
+    </div>
+    <div id="presentation">
+        <h1>Présentation</h1>
+    </div>
+    <div id="projet">
+        <h1>Projets</h1>
+    </div>
+
     <!--Infos légales-->
-    
-    <p>blablabla</p>
 </body>
 </html>
